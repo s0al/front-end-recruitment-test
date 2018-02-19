@@ -1,0 +1,10 @@
+#bacon-images-wrapper {
+	display: flex;
+	flex-wrap: row wrap;
+}
+
+.bacon-image {
+	height: 200px;
+	flex-grow: 1;
+	width: 33%;
+}
