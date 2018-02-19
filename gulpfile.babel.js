@@ -261,6 +261,7 @@ gulp.task('generate-service-worker', ['copy-sw-scripts'], () => {
 
 const fs = require('fs');
 
-gulp.task('submodule', () => {
-  fs.symlinkSync('../submodule/submodule.html', 'app/submodule.html');
+gulp.task('submodules', () => {
+  fs.symlinkSync('../submodules/submodule.html', 'app/submodule.html');
+  fs.symlinkSync('../submodules/checkout.html', 'app/checkout.html');
 });

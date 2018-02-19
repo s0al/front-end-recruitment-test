@@ -1,0 +1,85 @@
+.checkout {
+	&__number {
+		border-radius: 50%;
+		background: #000;
+		color: #fff;
+		font-weight: 700;
+		width: 19px;
+		height: 19px;
+		line-height: 20px;
+		display: block;
+		text-align: center;
+		float: right;
+		font-size: 12px;
+		margin-top: 16px;
+		margin-right: -8px;
+	}
+
+	&__title {
+		font-weight: 900;
+		color: #000;
+		text-transform: uppercase;
+		font-size: 11px;
+	}
+
+	&__field {
+		box-shadow: 0 2px 2px 0 rgba(0,0,0,.14);
+		background-color: #fff;
+		border-radius: 3px;
+		height: 43px;
+		padding: 0px 10px;
+
+		&__input {
+			display: block;
+			border: none;
+			color: #9B9B9B;
+			font-size: 14px;
+			width: 100%;
+		}
+
+		&__label {
+			color: #000;
+			display: block;
+			font-weight: 700;
+			font-size: 11px;
+		}
+	}
+
+	&__button {
+		width: 100%;
+		background-color: #6BD400 !important;
+		color: #fff;
+	}
+
+	&__order {
+		margin-top: 53px;
+		padding: 5px;
+		background-color: #fff;
+
+		&--wrapper {
+			border: dotted 1px rgba(0,0,0,0.1);
+			width: 100%;
+			padding: 0;
+		}
+	}
+
+	&__values {
+		font-size: 11px;
+		margin: 0 auto 5px;
+
+		&--total {
+			font-weight: 900;
+			font-size: 14px;
+		}
+	}
+}
+
+.divider {
+	border: dashed 1px rgba(0,0,0,0.05);
+	margin: 11px 10px 8px;
+	width: 100%;
+
+	&--bottom {
+		margin: 6px 10px 8px;
+	}
+}
