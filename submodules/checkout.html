@@ -73,41 +73,45 @@
               <span class="checkout__number">1</span>
             </div>
             <div class="mdl-cell mdl-cell--8-col">
-              <form>
+              <form id="checkout-form">
                 <div class="mdl-grid">
                   <div class="mdl-cell mdl-cell--12-col checkout__title">
                     Personal information
                   </div>
                   <div class="mdl-cell mdl-cell--6-col checkout__field">
                     <label for="name" class="checkout__field__label">First name</label>
-                    <input type="text" value="Elon" id="name" class="checkout__field__input"></input>
+                    <input required type="text" value="Elon" name="First name" id="name" class="checkout__field__input"></input>
                   </div>
                   <div class="mdl-cell mdl-cell--6-col checkout__field">
                     <label for="lastname" class="checkout__field__label">Last name</label>
-                    <input type="text" value="Musk" id="lastname" class="checkout__field__input">
+                    <input required type="text" value="" name="Last name" id="lastname" class="checkout__field__input">
                   </div>
                   <div class="mdl-cell mdl-cell--12-col checkout__field">
                     <label for="email" class="checkout__field__label">Email</label>
-                    <input type="email" value="elon@musk.com" id="email" class="checkout__field__input">
+                    <input required type="email" name="Email" value="elon@musk.com" id="email" class="checkout__field__input">
                   </div>
                   <div class="mdl-cell mdl-cell--6-col checkout__field">
                     <label for="country" class="checkout__field__label">Country</label>
-                    <select id="country" class="checkout__field__input">
+                    <select id="country" name="Country" class="checkout__field__input" required pattern="us">
+                      <option value="">-</option>
                       <option value="us">United States</option>
                     </select>
                   </div>
                   <div class="mdl-cell mdl-cell--6-col checkout__field">
                     <label for="postalcode" class="checkout__field__label">Postal Code</label>
-                    <input type="text" value="00110" id="postalcode" class="checkout__field__input">
+                    <input required type="text" name="Postal code" value="00110" id="postalcode" class="checkout__field__input">
                   </div>
                   <div class="mdl-cell mdl-cell--12-col checkout__field">
                     <label for="phone" class="checkout__field__label">Phone Number</label>
-                    <input type="text" value="09128892999" id="phone" class="checkout__field__input">
+                    <input required type="text" name="Phone" value="09128892999" id="phone" class="checkout__field__input">
                   </div>
                   <div class="mdl-cell mdl-cell--12-col">
-                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent checkout__button">
+                    <button id="checkout-submit-button" type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent checkout__button">
                       COMPLETE PURCHASE
                     </button>
+                  </div>
+                  <div class="mdl-cell mdl-cell--12-col">
+                    <div id="checkout-error-message"></div>
                   </div>
                 </div>
               </form>

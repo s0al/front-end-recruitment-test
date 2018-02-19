@@ -35,6 +35,10 @@
 			color: #9B9B9B;
 			font-size: 14px;
 			width: 100%;
+
+			&:invalid {
+				border-bottom: 1px solid rgba(255,0,0,0.4);
+			}
 		}
 
 		&__label {
@@ -72,14 +76,23 @@
 			font-size: 14px;
 		}
 	}
-}
 
-.divider {
-	border: dashed 1px rgba(0,0,0,0.05);
-	margin: 11px 10px 8px;
-	width: 100%;
+	#checkout-error-message {
+		text-align: center;
+		font-size: 13px;
+		color: rgba(255,0,0,0.7);
+		font-weight: 700;
+	}
 
-	&--bottom {
-		margin: 6px 10px 8px;
+	.divider {
+		border: dashed 1px rgba(0,0,0,0.05);
+		margin: 11px 10px 8px;
+		width: 100%;
+
+		&--bottom {
+			margin: 6px 10px 8px;
+		}
 	}
 }
+
+
